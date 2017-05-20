@@ -49,7 +49,9 @@ Ajouter l'utilisateur dans la collection `users`:
 - Afficher Chuck sans le champs `_id`.
 - `db.users.find({name:"Chuck Norris"},{_id:0})`
 - Afficher les utilisateurs qui ont entre 20 et 25 ans.
+- `db.users.find({$and:[{age:{$gt:20}},{age:{$lt:25}}]}).pretty()`
 - Afficher uniquement les hommes entre 30 et 40 ans.
+- `db.users.find({$and:[{age:{$gt:30}},{age:{$lt:40}},{gender:"male"}]}).pretty()`
 - Afficher les utilisateurs habitant l'état de Louisianne (`Louisiana`)
 - Afficher les 20 premiers utilisateurs triés par ordre décroissant d'age.
 - Combien y'a-t-il de femmes agées de 30 ans?
