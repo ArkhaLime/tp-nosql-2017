@@ -21,6 +21,7 @@ Consultez la documentation disponible sur le site de mongoDB : https://docs.mong
 - Connectez vous à l'instance de mongo avec le mongo-shell
 - Consulter l'aide (`help`),
 - Récupérer le fichier users.json et l'importer dans la collection `myUsers` de la base `tp-mongo`. [Voir la commande mongoimport.](http://docs.mongodb.org/manual/reference/program/mongoimport/),
+**ATTENTION: la commande mongoimport est à lancer dans le terminal de commande, pas dans le mongo shell**
 - `mongoimport --host localhost --db tp-mongo --collection myUsers < users.json`
 - Finalement j'ai changé d'avis, je voulais l'importer dans la collection `users`. Supprimer la collection `myUsers` et réimporter dans la collection `users`, Note : Il est également possible de simplement renommer la collection :
 - Utiliser le shell mongo pour compter le nombre d'éléments dans la collection `users`. [Voir la documentation du shell mongoDB](http://docs.mongodb.org/manual/reference/method/)
