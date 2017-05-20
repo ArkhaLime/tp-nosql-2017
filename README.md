@@ -9,7 +9,6 @@
     + Une fois installé/décompressé, ajouter le chemin du dossier `<mogodbpath>/bin` dans la variable d'environnement `PATH`.
     + Ajouter le dossier `/data/db` à la racine (`C:/` pour windows, `/` pour linux).
     + Pour windows : https://docs.mongodb.com/v3.0/tutorial/install-mongodb-on-windows/
-- Installer [git](http://git-scm.com/) ou le client [github](http://github.com)
 
 ### CRUD (Create Read Update Delete)
 
