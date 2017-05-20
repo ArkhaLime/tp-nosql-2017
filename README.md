@@ -63,7 +63,9 @@ Ajouter l'utilisateur dans la collection `users`:
 - Nos juristes nous ont dit que nous ne pouvions plus garder les numéro de téléphones de nos utilisateurs : supprimer le champ `phone` de tous les enregistrements.
 - `db.users.update({},{$unset:{phone:1}},{multi:true})`
 - Chuck Norris est venu nous dire que le temps ne marquait pas Chuck Norris, mais que Chuck Norris marquait le temps : changer l'age de Chuck Norris à `infinity`
-- Ajoutons un hobby à tous nos utilisateurs de plus de 50 ans : `jardinage`
+- `db.users.update({name:"Chuck Norris"},{$set:{age:"infinity"}})`
+- Ajoutons un hobby à tous nos utilisateurs de plus de 50 ans : `jardinage` 
+- `db.users.update({age:{$gt:50}},{$addToSet:{hobbies:"jardinage"}},{multi:true})`
 
 
 ### Agrégation
