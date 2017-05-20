@@ -45,7 +45,9 @@ Ajouter l'utilisateur dans la collection `users`:
 #### Lecture d'un élément
 
 - Afficher Chuck Norris (si il le permet).
+- `db.users.find({name:"Chuck Norris"})`
 - Afficher Chuck sans le champs `_id`.
+- `db.users.find({name:"Chuck Norris"},{_id:0})`
 - Afficher les utilisateurs qui ont entre 20 et 25 ans.
 - Afficher uniquement les hommes entre 30 et 40 ans.
 - Afficher les utilisateurs habitant l'état de Louisianne (`Louisiana`)
