@@ -94,7 +94,7 @@ Le projet consiste en un evernote-like (https://evernote.com).
 L'application doit fournir les fonctionnalités suivantes :
 - Chaque utilisateur possède une liste de "note".
 - Une note est constituée au minimum d'un titre, d'une date d'ajout, d'un contenu (le contenu doit pouvoir être au minimum un texte ou un lien (avec une description)).
-- Une note peut inclure des hashtags, en le préfixant d'un '#' (#hashtag).
+- Une note peut inclure des hashtags.
 - Un utilisateur doit pouvoir visualiser, ajouter, modifier et supprimer une note.
 - L'utilisateur doit pouvoir rechercher les notes, la recherche peut se faire sur un hashtag, sur le contenu, sur le titre, ou sur la date d'ajout (avant telle date, après telle date, entre telle et telle date).
 - Chaque utilisateur a une page de profil qui liste les notes qu'il a créé.
