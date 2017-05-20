@@ -1,0 +1,14 @@
+version: '2'
+
+services:
+  mongo-client:
+    container_name: mongo_client
+    image: mongo
+    depends_on:
+    - mongo-server
+  mongo-server:
+    image: mongo
+    ports:
+    - 27017:27017
+
+# docker exec -it mongo_client /bin/bash -c mongo
