@@ -64,7 +64,7 @@ Ajouter l'utilisateur dans la collection `users`:
 - `db.users.update({},{$unset:{phone:1}},{multi:true})`
 - Chuck Norris est venu nous dire que le temps ne marquait pas Chuck Norris, mais que Chuck Norris marquait le temps : changer l'age de Chuck Norris à `infinity`
 - `db.users.update({name:"Chuck Norris"},{$set:{age:"infinity"}})`
-- Ajoutons un hobby à tous nos utilisateurs de plus de 50 ans : `jardinage` 
+- Ajoutons un hobby à tous nos utilisateurs de plus de 50 ans : `jardinage`
 - `db.users.update({age:{$gt:50}},{$addToSet:{hobbies:"jardinage"}},{multi:true})`
 
 
@@ -72,6 +72,7 @@ Ajouter l'utilisateur dans la collection `users`:
 
 
 - Je souhaite savoir combien d'utilisateur j'ai dans chaque état, lister les états en indiquant pour chacun, le nombre d'utilisateurs présents.
+- `db.users.aggregate([{$group:{_id:"$address.state", population:{$sum:1}}}])`
 - Je souhaite savoir l'âge moyen des utilisateurs de chaque état.
 - Je veux connaître la liste de tous les hobbies de chaque ville.
 - Utiliser les projections (`$project`) pour lister les utilisateurs en n'affichant que leur nom (en minuscule) et leur age.
