@@ -53,8 +53,11 @@ Ajouter l'utilisateur dans la collection `users`:
 - Afficher uniquement les hommes entre 30 et 40 ans.
 - `db.users.find({$and:[{age:{$gt:30}},{age:{$lt:40}},{gender:"male"}]}).pretty()`
 - Afficher les utilisateurs habitant l'état de Louisianne (`Louisiana`)
+- `db.users.find({"address.state":"Louisiana"}).pretty()`
 - Afficher les 20 premiers utilisateurs triés par ordre décroissant d'age.
+- `db.users.find().sort({age:-1}).limit(20).pretty()`
 - Combien y'a-t-il de femmes agées de 30 ans?
+- `db.users.count({$and:[{age:30},{gender:"female"}]})`
 
 #### Modifier/Supprimer un élément
 
