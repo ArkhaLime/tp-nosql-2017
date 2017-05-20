@@ -83,3 +83,31 @@ Suivre [le tutoriel du site de redis](http://try.redis.io/)
 
 ## Bonus : Neo4j
 Si vous avez terminé en avance, vous pouvez aller essayer Neo4j sur leur [site](http://www.neo4j.org/learn/try)
+
+# Projet 2017
+
+## Sujet
+Le projet consiste en un evernote-like (https://evernote.com).
+
+## Fonctionnalités
+
+L'application doit fournir les fonctionnalités suivantes :
+- Chaque utilisateur possède une liste de "note".
+- Une note est constituée au minimum d'un titre, d'une date d'ajout, d'un contenu (le contenu doit pouvoir être au minimum un texte ou un lien (avec une description)).
+- Une note peut inclure des hashtags, en le préfixant d'un '#' (#hashtag).
+- Un utilisateur doit pouvoir visualiser, ajouter, modifier et supprimer une note.
+- L'utilisateur doit pouvoir rechercher les notes, la recherche peut se faire sur un hashtag, sur le contenu, sur le titre, ou sur la date d'ajout (avant telle date, après telle date, entre telle et telle date).
+- Chaque utilisateur a une page de profil qui liste les notes qu'il a créé.
+
+## Spécifications techniques
+
+La base de données doit être mongodb, le choix du langage est libre.
+Il existe beaucoup de librairies Java (et PHP ;-) ) permettant de faciliter l'interaction avec une base mongoDb.
+
+## Restitution du projet
+
+Le projet sera à rendre via un dépôt git (github, bitbucket, ...).
+Il devra être accompagné d'une notice d'utilisation indiquant comment lancer le projet.
+Il devra également être accompagné d'un document expliquant et justifiant des choix fait dans la réalisation du projet (choix des collections, choix de la librairie, architecture du projet, etc.).
+
+Le projet doit être rendu **le 10 Juin au plus tard.** A chaque jour de retard, un point sera décompté (dans la limite du stock disponible).
